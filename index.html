@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function myfunction() {
+            var hours = document.getElementById("hours");
+            var mins = document.getElementById("min");
+            var seconds = document.getElementById("sec");
+            var time = new Date();
+            var hh = time.getHours();
+            var mm = time.getMinutes();
+            var ss = time.getSeconds();
+
+            hh = hh * 30 + mm / 2;
+            mm = mm * 6;
+            ss = ss * 6;
+
+            hours.style.transform="rotate("+hh+"deg)";
+            mins.style.transform="rotate("+mm+"deg)";
+            seconds.style.transform = "rotate(" + ss + "deg)";
+        }
+        setInterval(myfunction, 1000);
+    </script>
+</head>
+<body>
+    <section id="box">
+        <section id="clock">
+            <div id="center"></div>
+            <div id="h12" class="hours-quater"></div>
+            <div id="h1" class="hours-properties"></div>
+            <div id="h2"class="hours-properties"></div>
+            <div id="h3"class="hours-quater"></div>
+            <div id="h4"class="hours-properties"></div>
+            <div id="h5"class="hours-properties"></div>
+            <div id="h6"class="hours-quater"></div>
+            <div id="h7"class="hours-properties"></div>
+            <div id="h8"class="hours-properties"></div>
+            <div id="h9"class="hours-quater"></div>
+            <div id="h10"class="hours-properties"></div>
+            <div id="h11"class="hours-properties"></div>
+            <div id="hours"></div>
+            <div id="min"></div>
+            <div id="sec"></div>
+            <div id="m1" class="min"></div>
+            <div id="m2" class="min"></div>
+            <div id="m3" class="min"></div>
+            <div id="m4" class="min"></div>
+            <div id="m6" class="min"></div>
+            <div id="m7" class="min"></div>
+            <div id="m8" class="min"></div>
+            <div id="m9" class="min"></div>
+            <div id="m11" class="min"></div>
+            <div id="m12" class="min"></div>
+            <div id="m13" class="min"></div>
+            <div id="m14" class="min"></div>
+            <div id="m16" class="min"></div>
+            <div id="m17" class="min"></div>
+            <div id="m18" class="min"></div>
+            <div id="m19" class="min"></div>
+            <div id="m21" class="min"></div>
+            <div id="m22" class="min"></div>
+            <div id="m23" class="min"></div>
+            <div id="m24" class="min"></div>
+            <div id="m26" class="min"></div>
+            <div id="m27" class="min"></div>
+            <div id="m28" class="min"></div>
+            <div id="m29" class="min"></div>
+            <div id="m31" class="min"></div>
+            <div id="m32" class="min"></div>
+            <div id="m33" class="min"></div>
+            <div id="m34" class="min"></div>
+            <div id="m36" class="min"></div>
+            <div id="m37" class="min"></div>
+            <div id="m38" class="min"></div>
+            <div id="m39" class="min"></div>
+            <div id="m41" class="min"></div>
+            <div id="m42" class="min"></div>
+            <div id="m43" class="min"></div>
+            <div id="m44" class="min"></div>
+            <div id="m46" class="min"></div>
+            <div id="m47" class="min"></div>
+            <div id="m48" class="min"></div>
+            <div id="m49" class="min"></div>
+            <div id="m51" class="min"></div>
+            <div id="m52" class="min"></div>
+            <div id="m53" class="min"></div>
+            <div id="m54" class="min"></div>
+            <div id="m56" class="min"></div>
+            <div id="m57" class="min"></div>
+            <div id="m58" class="min"></div>
+            <div id="m59" class="min"></div>
+
+        </section>
+    </section>
+
+    <!-- <section>
+        <iframe src="https://sujeetkportfolio.000webhostapp.com/" frameborder="0"></iframe>
+    </section> -->
+</body>
+</html>
